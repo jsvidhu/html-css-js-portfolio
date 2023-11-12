@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Vidhubala Swaminathan</div>
+        <div> 
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#Certificate">Certificate</a></li>
+                <li><a href="#Project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Vidhubala Swaminathan</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#Certificate" onclick="toggleMenu()">Certificate</a></li>
+                <li><a href="#Project" onclick="toggleMenu()">Project</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./Assets/profile-pic-2.png" alt="Vidhubala profile pic">
+        </div>
+        <div class="section__text">
+            <p class="section__textp1">Hello, I'm</p>
+            <h1 class="title">Vidhubala</h1>
+            <p class="section__text__p2">Frontend Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./Assets/resume-example.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact info</button>
+            </div>
+            <div id="social-container">
+                <img src="./Assets/linkedin.png" alt="My linkedin Profile"
+                class="icon" onclick="location.href='https://www.linkedin.com/in/vidhubala-swaminathan/'">
+                <img src="./Assets/github.png" alt="My GitHub Profile"
+                class="icon" onclick="location.href='https://github.com/jsvidhu'">
+
+            </div>
+
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img 
+                src="./Assets/about-pic.jpg"
+                alt="Profile Picture"
+                class="about-pic"
+                />
+            </div>
+            <div class="about-details-container">
+                <div class="about-container">
+                    <div class="details-container">
+                        <img src="./Assets/education.png" 
+                        alt="Education icon"
+                        class="icon"
+                        />
+                        
+                        <h3>Education</h3>
+                        <p>Btech <br/>Computer Science Engneering</p>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <p>Highly motivated and detail-oriented fresher seeking a job opportunity.
+                         With a strong educational background in computer science and a passion for leveraging data-driven insights
+                         , I am eager to apply my skills and flourish as an innovator. With excellent problem-solving abilities and a
+                          commitment to expanding my knowledge, I am dedicated to making meaningful contributions. I also have 
+                          a positive attitude that will lead me to success in any deal. In the future, I would like to grasp
+                           more and more knowledge about this field, which will give me recognition and fame in the related field.
+                            I will constantly update my knowledge and apply it to the advancement of the company.
+                    </p>
+                </div>
+            </div>
+        </div>
+            <img 
+                src="./Assets/arrow.png" 
+                alt="Arrow icon" 
+                class="icon arrow"
+                onclick="location.href='./#Certificate'" 
+            />
+    </section>
+    <section id ="Certificate">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Certificate</h1>
+        <div class="Certificate-details-container">
+            <div class="about-container">
+                <div class="details-container">
+                    <div class="article-container">
+                        <article class="ctf">
+                            <img src="./Assets/experience.png" 
+                            alt="Certificate icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Google Data Analytics Professional Certificate </h3>
+                                <p>Coursera</p>
+                            </div>
+                        </article>
+                        <article class="ctf">
+                            <img src="./Assets/experience.png" 
+                            alt="Certificate icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Programming for Everybody (Getting Started with Python) Authorized by the University of Michigan</h3>
+                                <p>Coursera</p>
+                            </div>
+                        </article>
+                        <article class="ctf">
+                            <img src="./Assets/experience.png" 
+                            alt="Certificate icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>IBM Full Stack Software Developer Professional Certificate(In Progress)</h3>
+                                <p>Coursera</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="about-container">
+                <div class="details-container">
+                    <h2 class="Certificate-sub-title">Programming Languages</h2>
+                    <div class="article-container">
+                      <article>
+                        <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        />
+                        <div>
+                          <h3>HTML</h3>
+                          <p>Basic</p>
+                        </div>
+                      </article>
+                      <article>
+                        <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        />
+                        <div>
+                          <h3>JavaScript</h3>
+                          <p>Basic</p>
+                        </div>
+                      </article>
+                      <article>
+                        <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        />
+                        <div>
+                          <h3>CSS</h3>
+                          <p>Basic</p>
+                        </div>
+                      </article>
+                      <article>
+                        <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        />
+                        <div>
+                          <h3>SQL</h3>
+                          <p>Intermediate</p>
+                        </div>
+                      </article>
+                      <article>
+                        <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        />
+                        <div>
+                          <h3>Python</h3>
+                          <p>Intermediate</p>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <img 
+                src="./Assets/arrow.png" 
+                alt="Arrow icon" 
+                class="icon arrow"
+                onclick="location.href='./#Project'" 
+            />
+    </section>
+    <section id="Project">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Project</h1>
+        <div class="Certificate-details-container">
+            <div class="about-container">
+            <div class="details-container color-container">
+            
+                <h2 class="Certificate-sub-title Project title">Secured Image Sharing with a Fixed Number of Shadow Images </h2>
+                <p>The project aims to develop secure image communication based on
+                     a multi-secret sharing scheme and uses encrypted pixel position 
+                     sharing. In addition to this data embedding is also integrated
+                      with the scheme. Implementation of the project is done in Python.</p>
+                      <br>
+                <div class="btn-container">
+                    <button 
+                        class="btn btn-color-2 Project-btn" 
+                        onclick="location.href='https://github.com/jsvidhu/Secured-Image-Sharing-with-a-Fixed-Number-of-Shadow-Images'"
+                    >
+                    GitHub 
+                </button>
+   
+                </div>
+            </div>
+            <div class="details-container color-container">
+                
+                <h2 class="Certificate-sub-title Project title">An Efficient and Robust Weed Detection Prototype Using GAN and Transfer Learning</h2>
+                
+                <p>Created a deep learning-based General Adversarial Network (GAN) to help in early weed detection to help reduce herbicide spraying. This project is done using Python.</p>
+                <br>
+                <br>
+
+                <div class="btn-container">
+                    <button 
+                        class="btn btn-color-2 Project-btn" 
+                        onclick="location.href='https://github.com/'"
+                    >
+                        GitHub 
+                    </button>
+   
+                </div>
+            </div>
+            <div class="details-container color-container">
+              
+                <h2 class="Certificate-sub-title Project title">Voice Virtual Assistant using TCP </h2>
+                <br>
+               
+                
+                <p>This Python project aims to design and implement a Virtual Assistant (i.e., server–client interaction application) using a TCP connection. </p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="btn-container">
+                    <button 
+                        class="btn btn-color-2 Project-btn" 
+                        onclick="location.href='https://github.com/jsvidhu/Voice-Virtual-Assistant-using-TCP'"
+                    >
+                    GitHub 
+                </button>
+                </div> 
+            </div>
+            </div>
+        </div>
+        <img 
+                src="./Assets/arrow.png" 
+                alt="Arrow icon" 
+                class="icon arrow"
+                onclick="location.href='./#contact'" 
+            />
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img 
+                src="./Assets/email.png"
+                alt="Email icon"
+                class="icon contact-icon"
+            />
+            <p><a.href="mailto:jsvidhubala2001@gmail.com">jsvidhubala2001@gmail.com</a.href></p>
+            </div>
+            <div class="contact-info-container">
+                <img 
+                src="./Assets/linkedin.png"
+                alt="linkedin icon"
+                class="icon contact-icon"
+            />
+            <p><a href="www.linkedin.com">LinkedIn</a.href></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Copyright &#169; 2023 Vidhubala. All Rights Reserved.</p>
+      </footer>
+      <script src="script.js"></script>
+    </body>
+  </html>
